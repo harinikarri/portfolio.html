@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team Portfolio</title>
+
+<style>
+    *{
+        margin: 5px;;
+        padding: 20px;;
+        box-sizing:border-box;
+    }
+body{
+    font-family:Arial,sans-serif;
+    text-align:center;
+    background:linear-gradient(135deg,#e3f2fd,#bbdefb);
+}
+header{
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.member-page{
+    display:none;
+}
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80;
+    background: #1565c0;
+    text-align: center;
+}
+th{
+    background:#1565c0;
+    color:white;
+}
+th,td{
+    border:1px solid #ddd;
+    padding: 10px;
+}
+button{
+    padding:10px 20px;
+    margin:10px;
+    cursor:pointer;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+button:hover{
+    background:#0d47a1;
+}
+html{
+    scroll-behavior: smooth;
+}
+footer{
+    background:#1565c0;
+    color:white;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+<script>
+function showMember(name){
+    document.getElementById("main").style.display="none";
+
+    document.getElementById("harini").style.display="none";
+    document.getElementById("kavya").style.display="none";
+    document.getElementById("bhavya").style.display="none";
+
+    document.getElementById(name).style.display="block";
+}
+
+function backHome(){
+    document.getElementById("main").style.display="block";
+
+    document.getElementById("harini").style.display="none";
+    document.getElementById("kavya").style.display="none";
+    document.getElementById("bhavya").style.display="none";
+    document.getElementById("Anusha").style.display="none";
+}
+</script>
+</head>
+<body>
+
+<div id="main">
+    <header>
+    <h1>Welcome To Our Team Portfolio</h1>
+    <button onclick="showMember('harini')">Harini</button>
+    <button onclick="showMember('kavya')">Kavya</button>
+    <button onclick="showMember('bhavya')">Bhavya</button>
+    <button onclick="showMember('Anusha')">Anusha</button>
+    </header>
+    
+    <section id="feedback">
+
+    <h2 style="text-align:center;">Feedback & Review</h2>
+
+<div style="text-align:center; font-size:35px;">
+
+    <span onclick="rate(1)">⭐</span>
+    <span onclick="rate(2)">⭐</span>
+    <span onclick="rate(3)">⭐</span>
+    <span onclick="rate(4)">⭐</span>
+    <span onclick="rate(5)">⭐</span>
+
+</div>
+
+<p id="ratingText" style="text-align:center;"></p>
+
+<textarea
+placeholder="Write your feedback here..."
+style="display:block; margin:auto; width:50%; height:100px;">
+</textarea>
+
+<br>
+
+<div style="text-align:center;">
+    <button>Submit Review</button>
+</div>
+
+</section>
+
+<script>
+function rate(stars){
+    document.getElementById("ratingText").innerHTML =
+    "You selected " + stars + " Star Rating";
+}
+</script>
+     <h3 style="text-align: center; color: green;">Thank You For Visiting My Team</h3>
+</div>
+
+<div id="harini" class="member-page">
+    <h2>Harini Portfolio</h2>
+    <nav>
+        <a href="#harini-home">Home</a>
+        <a href="#harini-qualification">Qualification</a>
+        <a href="#harini-resume">Resume</a>
+        <a href="#harini-contact">Contact Us</a>
+    </nav>
+
+    <section id="harini-home">
+        <img src="IMG-20240606-WA0005.jpg" width="200px">
+        <h1>Hi! I am Harini</h1>
+        <h3>Iam a B-Tech sudent and Aspiring Web Developer</h3>
+            <p>
+                passionate about web development,programming,and learning new technologies
+            </p>
+        <h3>My Goal</h3>   
+        <p>
+            My goal is to become a successful software engineer and build innovative applications that help people and support my family
+        </p> 
+        <h3>Skills</h3>
+        <p>
+            python,HTML,CSS,Javascript,SQL
+        </p>
+        <p><i>"learning Today,Leading tomorrow"</i></p>
+    </section>
+
+    <section id="harini-qualification">
+
+    <h2>Qualification</h2>
+
+    <table border="1" cellpadding="10" text-align="center">
+        <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Percentage/CGPA</th>
+        </tr>
+
+        <tr>
+            <td>B.Tech (CSE)</td>
+            <td>Priyadarshini institute of technology and science for women</td>
+            <td>2023 - 2027</td>
+            <td>8.27CGPA</td>
+        </tr>
+
+        <tr>
+            <td>Intermediate</td>
+            <td>govt Junior College</td>
+            <td>2021 - 2023</td>
+            <td>75%</td>
+        </tr>
+
+        <tr>
+            <td>SSC</td>
+            <td>ZP High School</td>
+            <td>2021</td>
+            <td>95%</td>
+        </tr>
+    </table>
+
+</section>
+<section id="harini-resume">
+
+    <h2 style="text-align:center;">My Resume</h2>
+
+    <div style="text-align:center;">
+
+        <p>Click below to view or download my resume.</p>
+
+        <a href="harini.resume.pdf" target="_blank">
+            <button>View Resume</button>
+        </a>
+
+        <a href="harini.resume.pdf" download>
+            <button>Download Resume</button>
+        </a>
+
+    </div>
+
+</section>
+<section id="harini-contact">
+    <h2 style="text-align:center;">Contact</h2>
+    <div style="text-align:center;">
+            <p><b>Name:</b> Harini</p>
+            <p><b>Email:</b>harinikarri14@gmail.com</p>
+            <p><b>phone:</b>+91 9014706054</p>
+            <p><b>Address:</b>Anakapalli,Andhra pradesh,india</p>   
+    </div>
+    <br>
+    <form style="width:50; margin:auto; text-align: center;">
+        <input type="text" placeholder="Enter Your Name"><br>
+
+        <input type="email" placeholder="Enter YourEmail"><br>
+
+        <textarea placeholder="Enter Your Message"></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+        <button onclick="backHome()">Back To Main Page</button>
+</div>
+
+<div id="kavya" class="member-page">
+    <h2>Kavya Portfolio</h2>
+    <nav>
+        <a href="#kavya-home">Home</a>
+        <a href="#kavya-qualification">Qualification</a>
+        <a href="#kavya-resume">Resume</a>
+        <a href="#kavya-contact">Contact Us</a>
+    </nav>
+
+    <section id="kavya-home">
+        <img src="kavya.jpg.jpeg" width="200px" height="300px">
+        <h1>Hi! I am Kavya</h1>
+        <p>
+            Welcome To my Portfolio.
+            Iam a B.Tech student and aspiring Web Developer.
+        </p>
+        <h3>Skills</h3>
+        <p>
+            HTML,CSS,Python,SQL
+        </p>
+        <h3>My Goal</h3>
+        <p>
+            My goal is to become a successful software Engineer and contribute to innovative technology solutions
+        </p>
+        <p><i>"Success comes from continuous learning and hardwork</i></p>
+    </section>
+
+    <section id="kavya-qualification">
+
+        <h2>Qualification</h2>
+
+    <table border="1" cellpadding="10" text-align="center">
+        <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Percentage/CGPA</th>
+        </tr>
+
+        <tr>
+            <td>B.Tech (CSE)</td>
+            <td>Priyadarshini institute of technology and science for women</td>
+            <td>2023 - 2027</td>
+            <td>8.27CGPA</td>
+        </tr>
+
+        <tr>
+            <td>Intermediate</td>
+            <td>Narayana Junior College</td>
+            <td>2021 - 2023</td>
+            <td>80%</td>
+        </tr>
+
+        <tr>
+            <td>SSC</td>
+            <td>ZP High School</td>
+            <td>2021</td>
+            <td>95%</td>
+        </tr>
+    </table>
+
+</section>
+
+<section id="kavya-resume">
+
+    <h2 style="text-align:center;">My Resume</h2>
+
+    <div style="text-align:center;">
+
+        <p>Click below to view or download my resume.</p>
+
+        <a href="" target="_blank">
+            <button>View Resume</button>
+        </a>
+
+        <a href="" download>
+            <button>Download Resume</button>
+        </a>
+
+    </div>
+
+</section>
+<section id="kavya-contact">
+    <h2 style="text-align:center;">Contact</h2>
+    <div style="text-align:center;">
+            <p><b>Name:</b> Kavya</p>
+            <p><b>Email:</b>koppulakavya755@gmail.com</p>
+            <p><b>phone:</b>+91 7842703805</p>
+            <p><b>Address:</b>Guntur,Andhra pradesh,india</p>  
+    </div>
+     <br>
+    <form style="width:50; margin:auto; text-align: center;">
+        <input type="text" placeholder="Enter Your Name"><br>
+
+        <input type="email" placeholder="Enter YourEmail"><br>
+
+        <textarea placeholder="Enter Your Message"></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <button onclick="backHome()">Back To Main Page</button>
+</div>
+
+<div id="bhavya" class="member-page">
+    <h2>Bhavya Portfolio</h2>
+    <nav>
+        <a href="#bhavya-home">Home</a>
+        <a href="#bhavya-qualification">Qualification</a>
+        <a href="#bhavya-resume">Resume</a>
+        <a href="#bhavya-contact">Contact Us</a>
+    </nav>
+
+    <section id="bhavya-home">
+        <img src="bhavya.jpg.jpeg" width="200px" height=300px">
+        <h1>Hi! I am Bhavya</h1>
+        <p>
+            Welcome To my Portfolio.
+            I have completed my Graduation and aspiring Electronics Engineer.
+        </p>
+        <h3>Aspiring Electronics Engineer</h3>
+        <p>
+            I am an Electronics and Communication Engineering student passionate about technology and innovation.
+        </p>
+        <h3>My Goal</h3>
+        <p>
+            My goal is to become a skilled engineer and contribute to advancements in technology.
+        </p>
+        <p><i>"Dream big,work hard,stay focused</i></p>
+    </section>
+
+    <section id="bhavya-qualification">
+
+        <h2>Qualification</h2>
+
+    <table border="1" cellpadding="10" text-align="center">
+        <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Percentage/CGPA</th>
+        </tr>
+
+        <tr>
+            <td>B.Tech (ECE)</td>
+            <td>Anantha Lakshmi institute of technology and science for women</td>
+            <td>2022 - 2026</td>
+            <td>8.0CGPA</td>
+        </tr>
+
+        <tr>
+            <td>Intermediate</td>
+            <td>LRG Naidu Junior College</td>
+            <td>2020 - 2022</td>
+            <td>75%</td>
+        </tr>
+
+        <tr>
+            <td>SSC</td>
+            <td>ZP High School</td>
+            <td>2020</td>
+            <td>94%</td>
+        </tr>
+    </table>
+
+</section>
+
+<section id="bhavya-resume">
+
+    <h2 style="text-align:center;">My Resume</h2>
+
+    <div style="text-align:center;">
+
+        <p>Click below to view or download my resume.</p>
+
+        <a href="bhavya.resume.pdf" target="_blank">
+            <button>View Resume</button>
+        </a>
+
+        <a href="bhavya.resume.pdf" download>
+            <button>Download Resume</button>
+        </a>
+
+    </div>
+
+</section>
+<section id="bhavya-contact">
+    <h2 style="text-align:center;">Contact</h2>
+    <div style="text-align:center;">
+            <p><b>Name:</b>Bhavya</p>
+            <p><b>Email:</b>bhavyagollapallli@gmail.com</p>
+            <b>phone:</b>+91 9666063749
+            <p><b>Address:</b>Hindupur,Andhra pradesh,india</p>
+    </div>
+     <br>
+    <form style="width:50; margin:auto; text-align: center;">
+        <input type="text" placeholder="Enter Your Name"><br>
+
+        <input type="email" placeholder="Enter YourEmail"><br>
+
+        <textarea placeholder="Enter Your Message"></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <button onclick="backHome()">Back To Main Page</button>
+</div>
+<div id="Anusha" class="member-page">
+    <h2>Anusha portfolio</h2>
+    <nav>
+        <a href="#anusha-home">Home</a>
+        <a href="#anusha-qualification">Qualification</a>
+        <a href="#anusha-resume">Resume</a>
+        <a href="#anusha-contact">Contact Us</a>
+    </nav>
+
+    <section id="anusha-home">
+        <img src="Anusha.jpg.jpeg" width="200px" height=300px">
+        <h1>Hi! I am Anusha</h1>
+        <p>
+            Welcome To my Portfolio.
+            I am a B-Tech student and aspiring Web Developer.
+        </p>
+        <h3>Aspiring Web Developer</h3>
+        <p>
+            I am a computer science and engineering student with a passion for web development,programming,and learning new technologies.
+        </p>
+        <h3>Skills</h3>
+        <p>
+            python,HTML,CSS,SQL
+        </p>
+        <h3>My Goal</h3>
+        <p>
+            My goal is to become a successful software Engineer and create innovative solutions that make a positive impact on society.
+        </p>
+        <p><i>"Every achievement starts with the decision to try</i></p>
+    </section>
+
+    <section id="anusha-qualification">
+
+        <h2>Qualification</h2>
+
+    <table border="1" cellpadding="10" text-align="center">
+        <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Percentage/CGPA</th>
+        </tr>
+
+        <tr>
+            <td>B.Tech (CSE)</td>
+            <td>Priyadarshini institute of technology and science </td>
+            <td>2023 - 2027</td>
+            <td>8.0CGPA</td>
+        </tr>
+
+        <tr>
+            <td>Intermediate</td>
+            <td>Sri Vidya Sai Junior College</td>
+            <td>2021 - 2023</td>
+            <td>67%</td>
+        </tr>
+
+        <tr>
+            <td>SSC</td>
+            <td> KVR ZP High School for girls</td>
+            <td>2020</td>
+            <td>92%</td>
+        </tr>
+    </table>
+
+</section>
+
+<section id="anusha-resume">
+
+    <h2 style="text-align:center;">My Resume</h2>
+
+    <div style="text-align:center;">
+
+        <p>Click below to view or download my resume.</p>
+
+        <a href="" target="_blank">
+            <button>View Resume</button>
+        </a>
+
+        <a href="" download>
+            <button>Download Resume</button>
+        </a>
+
+    </div>
+
+</section>
+<section id="anusha-contact">
+    <h2 style="text-align:center;">Contact</h2>
+    <div style="text-align:center;">
+            <p><b>Name:</b>Anusha</p>
+            <p><b>Email:</b>tasilanusha@gmail.com</p>
+            <p><b>phone:</b>+91 7337099082</p>
+            <p><b>Address:</b>Maddikera,Andhra pradesh,india</p>
+        </p>    
+    </div>
+     <br>
+    <form style="width:50; margin:auto; text-align: center;">
+        <input type="text" placeholder="Enter Your Name"><br>
+
+        <input type="email" placeholder="Enter YourEmail"><br>
+
+        <textarea placeholder="Enter Your Message"></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <button onclick="backHome()">Back To Main Page</button>
+</div>
+
+<footer style="background-color:#333; color:white; padding:20px; margin-top:20px; text-align:center;">
+    <h3>Team Portfolio</h3>
+    <p>&copy; 2026 Team Portfolio. All Rights Reserved.</p>
+    <p>Designed by Harini, Kavya, Bhavya & Anusha</p>
+</footer>
+
+</body>
+</html>
+</body>
+</html>
